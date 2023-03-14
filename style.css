@@ -5,14 +5,17 @@
 }
 
 body {
-  background: linear-gradient(to right, #0ee936d8, #148b65);
+  background-image: linear-gradient(120deg, #f6d365, #fda085);
   min-height: 100vh;
 }
 
-header {
-  font-size: 1.5rem;
-  font-family: sans-serif;
-  min-height: 20vh;
+header h1 {
+  font-size: 4rem;
+  margin: 50px 0;
+  background-image: linear-gradient(to right, #3c709a, #35ba9b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 header,
@@ -26,22 +29,36 @@ main {
   flex-direction: column;
 }
 
+.new-task {
+  background-color: #beba8e;
+  border-radius: 40px;
+}
+
 .new-task-input {
-  padding: 0.5rem;
-  font-size: 1rem;
+  padding: 1rem;
+  font-size: 1.5rem;
   border-radius: 7px;
+  background-color: #beba8e;
+  border: none;
+  outline: none;
+  border-radius: 40px;
 }
 .new-task-btn {
-  padding: 0.3rem;
-  font-size: 1rem;
-  border-radius: 4px;
+  padding: 1rem;
+  font-size: 1.5rem;
   cursor: pointer;
-  background: #30a6ea;
+  background: #beba8e;
+  border: none;
+  border-radius: 40px;
   transition: all 0.3s ease;
 }
 
+.new-task-btn i {
+  font-size: 2rem;
+}
+
 .new-task-btn:hover {
-  background: #3071ea;
+  background: #928f73;
 }
 
 .all-tasks {
